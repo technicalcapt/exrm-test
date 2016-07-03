@@ -13,8 +13,10 @@ use Mix.Config
 # which you typically run after static files are built.
 config :exrm_test, ExrmTest.Endpoint,
   http: [port: {:system, "PORT"}],
-  url: [host: "example.com", port: 80],
-  cache_static_manifest: "priv/static/manifest.json"
+  url: [host: "exrm-test.com", port: 80],
+  root: ".",
+  cache_static_manifest: "priv/static/manifest.json",
+  server: true
 
 # Do not print debug messages in production
 config :logger, level: :info
@@ -43,12 +45,12 @@ config :logger, level: :info
 #
 # Check `Plug.SSL` for all available options in `force_ssl`.
 
-# ## Using releases
-#
+## Using releases
+
 # If you are doing OTP releases, you need to instruct Phoenix
 # to start the server for all endpoints:
-#
-#     config :phoenix, :serve_endpoints, true
+
+    config :phoenix, :serve_endpoints, true
 #
 # Alternatively, you can configure exactly which server to
 # start per endpoint:
