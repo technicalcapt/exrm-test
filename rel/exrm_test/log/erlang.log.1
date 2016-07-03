@@ -1,0 +1,33 @@
+
+=====
+===== LOGGING STARTED Sun Jul  3 23:14:39 ICT 2016
+=====
+Exec: /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/erts-7.3/bin/erlexec -noshell -noinput +Bd -boot /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/releases/0.0.1/exrm_test -mode embedded -config /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/running-config/sys.config -boot_var ERTS_LIB_DIR /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/erts-7.3/../lib -env ERL_LIBS /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/lib -pa /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/lib/exrm_test-0.0.1/consolidated -args_file /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/running-config/vm.args -- foreground
+Root: /Users/technicalcapt/Projects/exrm_test/rel/exrm_test
+23:14:39.814 [info] Application exrm_test exited: ExrmTest.start(:normal, []) returned an error: shutdown: failed to start child: ExrmTest.Endpoint
+    ** (EXIT) shutdown: failed to start child: Phoenix.Endpoint.Server
+        ** (EXIT) an exception was raised:
+            ** (RuntimeError) server can't start because :port in config is nil, please use a valid port number
+                (phoenix) lib/phoenix/endpoint/server.ex:31: Phoenix.Endpoint.Server.to_port/1
+                (phoenix) lib/phoenix/endpoint/server.ex:28: Phoenix.Endpoint.Server.default/3
+                (phoenix) lib/phoenix/endpoint/server.ex:17: anonymous fn/5 in Phoenix.Endpoint.Server.init/1
+                (elixir) lib/enum.ex:1623: Enum."-reduce/3-lists^foldl/2-0-"/3
+                (phoenix) lib/phoenix/endpoint/server.ex:15: Phoenix.Endpoint.Server.init/1
+                (stdlib) supervisor.erl:287: :supervisor.init/1
+                (stdlib) gen_server.erl:328: :gen_server.init_it/6
+                (stdlib) proc_lib.erl:240: :proc_lib.init_p_do_apply/3
+{"Kernel pid terminated",application_controller,"{application_start_failure,exrm_test,{{shutdown,{failed_to_start_child,'Elixir.ExrmTest.Endpoint',{shutdown,{failed_to_start_child,'Elixir.Phoenix.Endpoint.Server',{#{'__exception__' => true,'__struct__' => 'Elixir.RuntimeError',message => <<\"server can't start because :port in config is nil, please use a valid port number\">>},[{'Elixir.Phoenix.Endpoint.Server',to_port,1,[{file,\"lib/phoenix/endpoint/server.ex\"},{line,31}]},{'Elixir.Phoenix.Endpoint.Server',default,3,[{file,\"lib/phoenix/endpoint/server.ex\"},{line,28}]},{'Elixir.Phoenix.Endpoint.Server','-init/1-fun-0-',5,[{file,\"lib/phoenix/endpoint/server.ex\"},{line,17}]},{'Elixir.Enum','-reduce/3-lists^foldl/2-0-',3,[{file,\"lib/enum.ex\"},{line,1623}]},{'Elixir.Phoenix.Endpoint.Server',init,1,[{file,\"lib/phoenix/endpoint/server.ex\"},{line,15}]},{supervisor,init,1,[{file,\"supervisor.erl\"},{line,287}]},{gen_server,init_it,6,[{file,\"gen_server.erl\"},{line,328}]},{proc_lib,init_p_do_apply,3,[{file,\"proc_lib.erl\"},{line,240}]}]}}}}},{'Elixir.ExrmTest',start,[normal,[]]}}}"}
+
+=====
+===== LOGGING STARTED Sun Jul  3 23:19:59 ICT 2016
+=====
+Exec: /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/erts-7.3/bin/erlexec -noshell -noinput +Bd -boot /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/releases/0.0.1/exrm_test -mode embedded -config /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/running-config/sys.config -boot_var ERTS_LIB_DIR /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/erts-7.3/../lib -env ERL_LIBS /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/lib -pa /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/lib/exrm_test-0.0.1/consolidated -args_file /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/running-config/vm.args -- foreground
+Root: /Users/technicalcapt/Projects/exrm_test/rel/exrm_test
+23:20:00.166 [info] Running ExrmTest.Endpoint with Cowboy using http://localhost:8888
+
+=====
+===== LOGGING STARTED Sun Jul  3 23:21:08 ICT 2016
+=====
+Exec: /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/erts-7.3/bin/erlexec -noshell -noinput +Bd -boot /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/releases/0.0.1/exrm_test -mode embedded -config /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/running-config/sys.config -boot_var ERTS_LIB_DIR /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/erts-7.3/../lib -env ERL_LIBS /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/lib -pa /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/lib/exrm_test-0.0.1/consolidated -args_file /Users/technicalcapt/Projects/exrm_test/rel/exrm_test/running-config/vm.args -- foreground
+Root: /Users/technicalcapt/Projects/exrm_test/rel/exrm_test
+23:21:09.356 [info] Running ExrmTest.Endpoint with Cowboy using http://localhost:8888
