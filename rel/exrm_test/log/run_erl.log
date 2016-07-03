@@ -1,8 +1,0 @@
-run_erl [4495] Sun Jul  3 23:21:08 2016
-Args before exec of shell:
-run_erl [4495] Sun Jul  3 23:21:08 2016
-argv[0] = sh
-run_erl [4495] Sun Jul  3 23:21:08 2016
-argv[1] = -c
-run_erl [4495] Sun Jul  3 23:21:08 2016
-argv[2] = exec "/Users/technicalcapt/Projects/exrm_test/rel/exrm_test/bin/exrm_test" "foreground"
