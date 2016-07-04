@@ -1,1 +1,8 @@
 /* This file is for your main application css. */
+input.absolute {
+    position: absolute;
+    bottom: 10px;
+    width: 60%;
+    border-style: groove;
+    right: 55px;
+}
