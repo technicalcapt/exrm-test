@@ -52,9 +52,23 @@ let socket = new Socket("/socket", {params: {token: window.userToken}})
 // from connect if you don't care about authentication.
 
 socket.connect()
+var messages = $("#message-list")
+var messageInput = $("#message-input")
+var userInput = $("#user-input")
 
 // Now that you are connected, you can join channels with a topic:
-let channel = socket.channel("topic:subtopic", {})
+let channel = socket.channel("room:lobby", {})
+messageInput.on("change", function() {
+    let payload = {user: userInput.val(), message: messageInput.val()}
+    channel.push("new_msg", payload)
+    messageInput.val("")
+})
+
+channel.on("new_msg", resp => {
+    messages.append(`<br> [${resp.user}] ${resp.message} </br>`)
+})
+
+
 channel.join()
   .receive("ok", resp => { console.log("Joined successfully", resp) })
   .receive("error", resp => { console.log("Unable to join", resp) })
