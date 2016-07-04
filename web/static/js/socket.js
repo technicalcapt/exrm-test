@@ -64,6 +64,10 @@ messageInput.on("change", function() {
     messageInput.val("")
 })
 
+channel.on("after_join", resp => {
+    messages.append(`<br> ${resp.message} </br>`)
+})
+
 channel.on("new_msg", resp => {
     messages.append(`<br> [${resp.user}] ${resp.message} </br>`)
 })
